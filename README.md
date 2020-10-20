@@ -16,6 +16,10 @@
 
 **请假原因**：请假的借口。
 
+## 显示效果
+
+![](https://github.com/bit-chorus/permissionforge/blob/master/images/show.jpg)
+
 ## 隐私声明
 
 填写的字段仅作假条显示时用。本程序不会上传你的个人信息，请放心使用。
