@@ -11,8 +11,9 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="234dp">
+        android:padding="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -73,17 +74,59 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <ImageView
-            android:id="@+id/imageView3"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="113dp"
-            app:srcCompat="@drawable/passed" />
+            android:layout_height="wrap_content"
+            android:layout_gravity="fill">
+
+            <ImageView
+                android:id="@+id/img_onVacationBk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/on_vacation_bk" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="@id/img_onVacationBk"
+                app:layout_constraintEnd_toEndOf="@id/img_onVacationBk"
+                app:layout_constraintGuide_percent="0.86"
+                app:layout_constraintStart_toStartOf="@id/img_onVacationBk"
+                app:layout_constraintTop_toTopOf="@id/img_onVacationBk" />
+
+            <TextClock
+                android:id="@+id/txtclk"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:alpha=".6"
+                android:background="@drawable/rounded_corner_fat"
+                android:backgroundTint="#090909"
+                android:paddingHorizontal="5dp"
+                android:textAlignment="center"
+                android:textSize="12sp"
+                android:format12Hour="当前时间:yyyy-mm-dd hh:mm:ss"
+                app:layout_constraintBottom_toBottomOf="@+id/img_onVacationBk"
+                app:layout_constraintEnd_toEndOf="@id/img_onVacationBk"
+                app:layout_constraintStart_toStartOf="@id/img_onVacationBk"
+                app:layout_constraintTop_toBottomOf="@id/guideline" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
             android:id="@+id/txt_top"
             android:layout_width="367dp"
-            android:layout_height="107dp"
+            android:layout_height="111dp"
             android:layout_gravity="center"
+            android:layout_marginTop="13dp"
             android:inputType="textMultiLine"
             android:lineSpacingMultiplier="1.2"
             android:lines="4"
@@ -241,26 +284,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/txt_my_req3"
-                android:layout_width="450dp"
-                android:layout_height="39dp"
-                android:layout_gravity="center"
-                android:layout_marginStart="20dp"
-                android:inputType="textMultiLine"
-                android:lineSpacingMultiplier="1.2"
-                android:lines="4"
-                android:paddingTop="15dp"
-                android:singleLine="false"
-                android:text="销假信息"
-                android:textColor="#000000"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            android:layout_height="match_parent"/>
 
     </LinearLayout>
 

@@ -1,57 +1,86 @@
 package com.example.outs
-
-import android.content.Context
 import android.graphics.Color
+import android.graphics.ImageDecoder
+import android.graphics.drawable.AnimatedImageDrawable
 import android.os.Bundle
+import android.os.SystemClock
 import android.text.Html
-import android.view.View
+import android.widget.Chronometer
+import android.widget.TextClock
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_simulation.*
-import java.io.File
-import java.io.FileWriter
+import kotlinx.coroutines.Job
+import kotlinx.coroutines.delay
 import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 const val COLOR_FIELD = "#787878"
 const val COLOR_VALUE = "#000000"
 const val COLOR_LINK = "#97cbfa"
 const val COLOR_EMPHASIS = "#fbcc42"
 const val COLOR_OK = "#04d351"
-
+const val COLOR_WHITE = "#ffffff"
 
 class SimulationActivity : AppCompatActivity() {
+    // entry point
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_simulation)
+        setTexts()
+        setGif()
+        setTimer()
+    }
 
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
         if (hasFocus) hideSystemUI()
     }
 
+    fun setTimer(){
+        val clock = findViewById<TextClock>(R.id.txtclk)
+        clock.setTextColor(Color.WHITE)
+    }
+
+
+    private fun setGif(){
+        val src = ImageDecoder.createSource(resources, R.drawable.on_vacation_bk)
+        val drawable = ImageDecoder.decodeDrawable(src)
+        img_onVacationBk.setImageDrawable(drawable)
+        if (drawable is AnimatedImageDrawable) {
+           drawable.start()
+        }
+    }
+
     private fun hideSystemUI() {
         this.getSupportActionBar()?.hide();
     }
 
-    private fun coloredText(color: String,str: String) : String{
+    private fun coloredText(color: String, str: String) : String{
         return "<font color=$color>$str</font>"
     }
 
     private fun t_fld(str: String) : String{
-        return coloredText(COLOR_FIELD,str)
+        return coloredText(COLOR_FIELD, str)
     }
 
     private fun t_val(str: String) : String{
-        return coloredText(COLOR_VALUE,str)
+        return coloredText(COLOR_VALUE, str)
     }
 
     private fun t_lnk(str: String) : String{
-        return coloredText(COLOR_LINK,str)
+        return coloredText(COLOR_LINK, str)
     }
 
     private fun t_emp(str: String) : String{
-        return coloredText(COLOR_EMPHASIS,str)
+        return coloredText(COLOR_EMPHASIS, str)
     }
 
     private fun t_ok(str: String) : String{
-        return coloredText(COLOR_OK,str)
+        return coloredText(COLOR_OK, str)
+    }
+
+    private fun t_white(str: String) : String{
+        return coloredText(COLOR_WHITE, str)
     }
 
     private fun randd() : Int{
@@ -89,13 +118,7 @@ class SimulationActivity : AppCompatActivity() {
                 t_fld("抄送人：　　 ")+t_val("无")
         txt_mid.text =  Html.fromHtml(text2)
         txt_initiate.text = Html.fromHtml(t_fld("$name - 发起申请"))
-        txt_passed.text =  Html.fromHtml(t_fld("一级：[辅导员]$teacherName - 审批通过"))
-    }
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_simulation)
-        setTexts()
+        txt_passed.text = Html.fromHtml(t_fld("一级：[辅导员]$teacherName - 审批通过"))
 
     }
 }
