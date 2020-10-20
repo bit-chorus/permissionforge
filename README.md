@@ -6,7 +6,7 @@
 
 *能用的话不妨动动小手，给个⭐支持一下吧。😀*
 
-https://github.com/bit-chorus/permissionforge/releases
+下载地址：https://github.com/bit-chorus/permissionforge/releases
 
 ## 字段说明
 
