@@ -113,7 +113,7 @@
                 android:paddingHorizontal="5dp"
                 android:textAlignment="center"
                 android:textSize="12sp"
-                android:format12Hour="当前时间:yyyy-mm-dd hh:mm:ss"
+                android:format12Hour="当前时间:yyyy-MM-dd hh:mm:ss"
                 app:layout_constraintBottom_toBottomOf="@+id/img_onVacationBk"
                 app:layout_constraintEnd_toEndOf="@id/img_onVacationBk"
                 app:layout_constraintStart_toStartOf="@id/img_onVacationBk"
