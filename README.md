@@ -6,6 +6,8 @@
 
 *能用的话不妨动动小手，给个⭐支持一下吧。😀*
 
+https://github.com/bit-chorus/permissionforge/releases
+
 ## 字段说明
 
 **名字**：请假者的姓名。
@@ -29,3 +31,4 @@
 ## 开源协议
 
 本软件在MIT协议许可下发行。
+
