@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PermissionForge</string>
+    <string name="hint_请假人姓名">请假人姓名</string>
+    <string name="hint_辅导员姓名">辅导员姓名</string>
+    <string name="hint_时长">时长（小时）</string>
+    <string name="hint_地点">申请地点（学校位置）</string>
+    <string name="hint_请假原因">请假原因</string>
+    <string name="main_activity_caption">输入你的信息，以生成假条。</string>
+</resources>
