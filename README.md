@@ -6,6 +6,8 @@
 
 **最新版本下载地址**：https://github.com/bit-chorus/permissionforge/releases/download/v2.2.0/permission-forge-v2.2.0.apk
 
+其他版本：https://github.com/bit-chorus/permissionforge/releases
+
 ## 如何让沮丧的作者高兴起来
 
 动动小手，给个⭐支持一下吧。😀
