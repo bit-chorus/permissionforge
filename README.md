@@ -2,11 +2,15 @@
 
 ## 描述
 
-它能帮你伪造今日校园的请假条。
+它能帮你伪造今日校园的请假条。 
 
-*能用的话不妨动动小手，给个⭐支持一下吧。😀*
+**最新版本下载地址**：https://github.com/bit-chorus/permissionforge/releases/download/v2.2.0/permission-forge-v2.2.0.apk
 
-下载地址：https://github.com/bit-chorus/permissionforge/releases
+## 如何让沮丧的作者高兴起来
+
+动动小手，给个⭐支持一下吧。😀
+
+[![BJufFH.gif](https://s1.ax1x.com/2020/10/29/BJufFH.gif)](https://imgchr.com/i/BJufFH)
 
 ## 字段说明
 
