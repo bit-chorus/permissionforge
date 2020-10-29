@@ -45,28 +45,26 @@ class MainActivity : AppCompatActivity() {
     // config loading and saving
 
     private fun load() {
-        val file = File(filesDir, "config.txt")
+        val file = File(filesDir, "config2.txt")
         if (!file.exists()) {
             return
         }
         val lines = file.readLines()
         var i = 0
         for (entry in editTextDict){
-            entry.value.setText(lines[ i])
+            entry.value.setText(lines[i])
             i += 1
         }
     }
 
     private fun save() {
-        val file = File(filesDir, "config.txt")
+        val file = File(filesDir, "config2.txt")
         if (!file.exists()) {
             file.createNewFile()
         }
         file.printWriter().use { out ->
-            var i = 0
             for (entry in editTextDict){
                 out.println(entry.value.text.toString())
-                i += 1
             }
         }
     }

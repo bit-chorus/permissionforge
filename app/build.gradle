@@ -13,8 +13,8 @@ android {
         targetSdkVersion 30
 
         // VERSION HERE!!!!!!!!!!!
-        versionCode 5
-        versionName "2.0.1"
+        versionCode 8
+        versionName "2.1.1"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -34,8 +34,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-}
 
+ //   options{ exclude 'META-INF/androidx.vectordrawable_vectordrawable.version' }
+
+}
 dependencies {
     implementation 'com.android.support.constraint:constraint-layout:2.0.0-beta1'
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"

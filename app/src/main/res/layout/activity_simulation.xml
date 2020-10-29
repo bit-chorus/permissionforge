@@ -9,11 +9,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#939191"
             android:orientation="vertical"
             android:padding="0dp">
 
@@ -22,29 +25,34 @@
                 android:layout_height="wrap_content">
 
                 <LinearLayout
-                    android:layout_width="126dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="38dp"
-                    android:layout_marginTop="8dp"
                     android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
                     <ImageView
                         android:id="@+id/imageView2"
-                        android:layout_width="36dp"
-                        android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_weight="0.005"
+                        android:paddingStart="1dp"
+                        android:paddingTop="3dp"
+                        android:paddingEnd="1dp"
+                        android:paddingBottom="3dp"
                         app:srcCompat="@drawable/sheild" />
 
                     <TextView
                         android:id="@+id/textView2"
-                        android:layout_width="119dp"
+                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:layout_weight="3"
                         android:gravity="left|center_vertical"
+                        android:maxLines="1"
                         android:text="请假详情"
-                        android:textAlignment="gravity"
+                        android:textAlignment="center"
                         android:textSize="18sp" />
 
                 </LinearLayout>
@@ -54,23 +62,24 @@
                     android:layout_width="41dp"
                     android:layout_height="38dp"
                     android:layout_gravity="center"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="5dp"
                     android:scaleX=".6"
                     android:scaleY=".6"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/back" />
 
                 <TextView
                     android:id="@+id/textView3"
-                    android:layout_width="57dp"
-                    android:layout_height="37dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
                     android:gravity="center"
                     android:text="反馈"
                     android:textColor="#00BCD4"
                     android:textColorLink="#FFFFFF"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -85,10 +94,10 @@
                     android:id="@+id/img_onVacationBk"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="13dp"
                     android:adjustViewBounds="true"
                     android:scaleType="fitCenter"
                     android:src="@drawable/on_vacation_bk"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
@@ -127,36 +136,44 @@
 
             <TextView
                 android:id="@+id/txt_top"
-                android:layout_width="367dp"
-                android:layout_height="111dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="13dp"
                 android:inputType="textMultiLine"
                 android:lineSpacingMultiplier="1.2"
                 android:lines="4"
+                android:paddingStart="15dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="5dp"
                 android:singleLine="false"
+                android:text="testingdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
                 android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
-                android:layout_height="32dp"
+                android:layout_height="wrap_content"
                 android:background="#EFEFEF"
                 android:gravity="center_vertical"
-                android:paddingStart="8dp"
+                android:paddingStart="10dp"
+                android:paddingTop="5dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="5dp"
                 android:text="请假详情"
                 android:textColor="#939191" />
 
             <TextView
                 android:id="@+id/txt_my_req"
-                android:layout_width="367dp"
-                android:layout_height="39dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:inputType="textMultiLine"
                 android:lineSpacingMultiplier="1.2"
-                android:lines="4"
-                android:paddingTop="15dp"
-                android:singleLine="false"
+                android:paddingStart="15dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="8dp"
                 android:text="我的 请假申请"
                 android:textColor="#000000"
                 android:textSize="18sp"
@@ -164,13 +181,17 @@
 
             <TextView
                 android:id="@+id/txt_mid"
-                android:layout_width="367dp"
-                android:layout_height="217dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:inputType="textMultiLine"
                 android:lineSpacingMultiplier="1.2"
-                android:paddingTop="15dp"
+                android:paddingStart="15dp"
+                android:paddingTop="0dp"
+                android:paddingEnd="15dp"
+                android:paddingBottom="8dp"
                 android:singleLine="false"
+                android:text="testing"
                 android:textSize="16sp" />
 
             <TextView
@@ -184,34 +205,34 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="182dp">
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp">
 
                 <ImageView
-                    android:id="@+id/imageView8"
+                    android:id="@+id/img_line"
                     android:layout_width="31dp"
                     android:layout_height="32dp"
                     android:layout_marginStart="20dp"
                     android:scaleType="fitXY"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView7"
+                    app:layout_constraintBottom_toBottomOf="@+id/img_greenc"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/imageView5"
+                    app:layout_constraintTop_toTopOf="@+id/img_bluec"
                     app:layout_constraintVertical_bias="0.48"
                     app:srcCompat="@drawable/line" />
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/img_bluec"
                     android:layout_width="29dp"
                     android:layout_height="29dp"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="40dp"
                     android:padding="5dp"
                     android:scaleType="fitCenter"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_my_req2"
                     app:srcCompat="@drawable/circle_blue" />
 
                 <ImageView
-                    android:id="@+id/imageView7"
+                    android:id="@+id/img_greenc"
                     android:layout_width="29dp"
                     android:layout_height="29dp"
                     android:layout_marginStart="20dp"
@@ -224,40 +245,46 @@
 
                 <TextView
                     android:id="@+id/txt_initiate"
-                    android:layout_width="326dp"
+                    android:layout_width="0dp"
                     android:layout_height="30dp"
-                    android:layout_marginStart="48dp"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginEnd="20dp"
                     android:gravity="center_vertical"
                     android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
                     android:text="发起申请"
                     android:textAlignment="gravity"
-                    app:layout_constraintStart_toEndOf="@+id/imageView5"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/imageView5" />
+                    app:layout_constraintTop_toBottomOf="@+id/txt_my_req2" />
 
                 <TextView
                     android:id="@+id/txt_passed"
-                    android:layout_width="326dp"
+                    android:layout_width="0dp"
                     android:layout_height="30dp"
-                    android:layout_marginStart="48dp"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginEnd="20dp"
                     android:gravity="center_vertical"
                     android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
                     android:text="审批通过"
                     android:textAlignment="gravity"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/img_greenc"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+                    app:layout_constraintTop_toBottomOf="@+id/txt_initiate" />
 
                 <TextView
                     android:id="@+id/txt_my_req2"
-                    android:layout_width="367dp"
-                    android:layout_height="39dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginStart="20dp"
                     android:inputType="textMultiLine"
-                    android:lineSpacingMultiplier="1.2"
-                    android:lines="4"
-                    android:paddingTop="15dp"
-                    android:singleLine="false"
+                    android:paddingStart="15dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="8dp"
                     android:text="审批状态"
                     android:textColor="#000000"
                     android:textSize="18sp"
@@ -267,28 +294,65 @@
 
                 <TextView
                     android:id="@+id/txt_advice"
-                    android:layout_width="318dp"
+                    android:layout_width="0dp"
                     android:layout_height="30dp"
-                    android:layout_marginStart="48dp"
+                    android:layout_marginStart="49dp"
+                    android:layout_marginEnd="20dp"
                     android:background="@drawable/rounded_corner"
                     android:padding="5dp"
                     android:text="审批意见：无"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/txt_passed" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <TextView
-                android:id="@+id/textView11"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:background="#EFEFEF"
-                android:gravity="center_vertical"
-                android:paddingStart="8dp"
-                android:textColor="#939191" />
+                android:orientation="vertical">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#3F51B5"
+                    android:backgroundTint="#1E88E5"
+                    android:padding="10dp"
+                    android:text="去销假"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:padding="10dp"
+                    android:text="申请续假"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="20dp"
+                    android:background="#FFFFFF"
+                    android:backgroundTint="#FFFFFF"
+                    android:padding="10dp"
+                    android:text="转发"
+                    android:textColor="#000000"
+                    android:textSize="18sp" />
+            </LinearLayout>
 
         </LinearLayout>
     </ScrollView>

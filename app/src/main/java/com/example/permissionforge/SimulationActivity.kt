@@ -34,8 +34,8 @@ class SimulationActivity : AppCompatActivity() {
 
         val now = Time()
         now.setToNow()
-        val mon = now.month
-        val day =  now.monthDay + 1
+        val mon = now.month + 1
+        val day =  now.monthDay
         val hr_st =  now.hour
         val dur = intent.getStringExtra(R.id.field时长.toString())?.toIntOrNull() ?: 3
         val hr_ed = hr_st + dur
