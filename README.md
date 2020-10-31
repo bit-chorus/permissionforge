@@ -4,9 +4,9 @@
 
 它能帮你伪造今日校园的请假条。 
 
-**最新版本下载地址**：https://github.com/bit-chorus/permissionforge/releases/download/v2.2.0/permission-forge-v2.2.0.apk
+最新版本下载地址：[v2.3.0](https://github.com/bit-chorus/permissionforge/releases/download/v2.3.0/permission-forge-v2.3.0.apk)
 
-其他版本：https://github.com/bit-chorus/permissionforge/releases
+其他版本：[Releases](https://github.com/bit-chorus/permissionforge/releases)
 
 ## 如何让沮丧的作者高兴起来
 
